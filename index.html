@@ -114,8 +114,8 @@
             </div>
              <div class="carousel-container">
                 <div class="carousel-slide" id="tanzaniaCarousel">
-                    <img src="https://via.placeholder.com/800x450/4fd1c5/FFFFFF?text=Tanzania+Safari" alt="Tanzania Safari" class="carousel-image">
-                    <img src="https://via.placeholder.com/800x450/059669/FFFFFF?text=Zanzibar+Beach" alt="Zanzibar Beaches" class="carousel-image">
+                    <img src="https://placehold.co/800x450/4fd1c5/FFFFFF?text=Tanzania+Safari" alt="Tanzania Safari" class="carousel-image">
+                    <img src="https://placehold.co/800x450/059669/FFFFFF?text=Zanzibar+Beach" alt="Zanzibar Beaches" class="carousel-image">
                 </div>
                 <div class="carousel-nav" id="tanzaniaCarouselNav">
                     <span class="carousel-dot active" onclick="showTanzaniaSlide(0)"></span>
@@ -169,7 +169,7 @@
             </div>
             <div class="carousel-container">
                  <div class="carousel-slide" id="masaiMaraCarousel">
-                    <img src="https://via.placeholder.com/800x450/4fd1c5/FFFFFF?text=Masai+Mara+Safari" alt="Masai Mara Kenya" class="carousel-image">
+                    <img src="https://placehold.co/800x450/4fd1c5/FFFFFF?text=Masai+Mara+Safari" alt="Masai Mara Kenya" class="carousel-image">
                  </div>
                  <div class="carousel-nav" id="masaiMaraCarouselNav">
                     <span class="carousel-dot active" onclick="showMasaiMaraSlide(0)"></span>
@@ -220,8 +220,8 @@
             </div>
             <div class="carousel-container">
                 <div class="carousel-slide" id="philippinesCarousel">
-                    <img src="https://via.placeholder.com/800x450/059669/FFFFFF?text=Boracay+Beach" alt="Boracay Philippines" class="carousel-image">
-                    <img src="https://via.placeholder.com/800x450/34d399/FFFFFF?text=El+Nido+Palawan" alt="El Nido Palawan" class="carousel-image">
+                    <img src="https://placehold.co/800x450/059669/FFFFFF?text=Boracay+Beach" alt="Boracay Philippines" class="carousel-image">
+                    <img src="https://placehold.co/800x450/34d399/FFFFFF?text=El+Nido+Palawan" alt="El Nido Palawan" class="carousel-image">
                 </div>
                 <div class="carousel-nav" id="philippinesCarouselNav">
                     <span class="carousel-dot active" onclick="showPhilippinesSlide(0)"></span>
@@ -248,10 +248,10 @@
                     <p class="text-gray-700"><strong>El Nido Hotels (per night for 5, mid-range):</strong> AED 800 - AED 2,500+.</p>
                     <p class="text-gray-700"><strong>Total Estimated Accommodation (5-6 nights for 5):</strong> AED 3,500 - AED 10,000+.</p>
                 </div>
-<div>
+                <div>
                     <h4 class="text-xl font-semibold text-gray-800 mb-3">September Weather & Key Experiences</h4>
                     <p class="text-gray-700 mb-2"><strong>September Weather:</strong> Towards the end of the wet season, warm and humid with intermittent rain. Still good for travel.</p>
-                    <p class="text-gray-700 mb-2"><strong>Places to Visit:</strong> Manila (transit, history), Boracay (white sands, lively), El Nido, Palawan (limestone karsts, lagoons).</p>
+                    <p class="text-700 mb-2"><strong>Places to Visit:</strong> Manila (transit, history), Boracay (white sands, lively), El Nido, Palawan (limestone karsts, lagoons).</p>
                     <p class="text-gray-700"><strong>Things to Do:</strong> Island hopping, water sports (snorkeling, diving), beach relaxation, sunset viewing, local cuisine, cultural exploration.</p>
                 </div>
             </div>
@@ -274,8 +274,8 @@
             </div>
             <div class="carousel-container">
                 <div class="carousel-slide" id="vietnamCarousel">
-                    <img src="https://via.placeholder.com/800x450/34d399/FFFFFF?text=Ha+Long+Bay" alt="Ha Long Bay, Vietnam" class="carousel-image">
-                    <img src="https://via.placeholder.com/800x450/059669/FFFFFF?text=Hanoi+City" alt="Hanoi City, Vietnam" class="carousel-image">
+                    <img src="https://placehold.co/800x450/34d399/FFFFFF?text=Ha+Long+Bay" alt="Ha Long Bay, Vietnam" class="carousel-image">
+                    <img src="https://placehold.co/800x450/059669/FFFFFF?text=Hanoi+City" alt="Hanoi City, Vietnam" class="carousel-image">
                 </div>
                 <div class="carousel-nav" id="vietnamCarouselNav">
                     <span class="carousel-dot active" onclick="showVietnamSlide(0)"></span>
@@ -333,7 +333,7 @@
         function showSlide(carouselId, slideIndex) {
             const carousel = document.getElementById(carouselId);
             const dotsContainer = document.getElementById(carouselId + 'Nav');
-            const dots = dotsContainer ? dotsContainer.querySelectorAll('.carousel-dot') : []; // Check if dotsContainer exists
+            const dots = dotsContainer ? dotsContainer.querySelectorAll('.carousel-dot') : []; 
 
             if (carousel) {
                 carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
@@ -360,10 +360,10 @@
         }
 
         // Set intervals for auto-sliding
-        setInterval(() => autoSlide('tanzaniaCarousel'), 5000); // Change image every 5 seconds
-        setInterval(() => autoSlide('masaiMaraCarousel'), 5000); // Change image every 5 seconds
-        setInterval(() => autoSlide('philippinesCarousel'), 5000); // Change image every 5 seconds
-        setInterval(() => autoSlide('vietnamCarousel'), 5000); // Change image every 5 seconds
+        setInterval(() => autoSlide('tanzaniaCarousel'), 5000); 
+        setInterval(() => autoSlide('masaiMaraCarousel'), 5000); 
+        setInterval(() => autoSlide('philippinesCarousel'), 5000); 
+        setInterval(() => autoSlide('vietnamCarousel'), 5000); 
 
         // Functions for manual dot clicks
         function showTanzaniaSlide(index) { showSlide('tanzaniaCarousel', index); carousels['tanzaniaCarousel'].currentSlide = index; }
